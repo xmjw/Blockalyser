@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+	<title>Canvas</title> 
+	<script src="core.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css.css" />
+</head>
+<body onload="startup()">
+	<canvas id="srcImg" class="srcImg"></canvas>
+	<canvas id="clrImg" class="srcImg"></canvas>
+	<form>
+		<input type="hidden" id="imageFile" value="olesya.png"/>
+		Height: <input type="text" id="destHeight" onblur="checkAspect(this)"/>
+		Width: <input type="text" id="destWidth" onblur="checkAspect(this)"/>
+		Lock Aspect Ratio: <input type="checkbox" id="preserveAspect" checked/>
+		<button type="button" onclick="render()">Render</button>
+		<button type="button" onclick="calculate()">Calculate</button>
+	</form>
+	
+	<div id='outputRaw'/>
+</body> 
+</html>

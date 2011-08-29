@@ -1,0 +1,25 @@
+<canvas id="srcImg"></canvas>
+<div>
+    <form action="http://127.0.0.1:8888/submit" id="submit_image">
+        <input type="hidden" id="imageFile" value="http://photo.blockalyser.com/images/<%= @image.id %>/original_<%= @image.photo_file_name %>"/>
+        <p>Height: <input type="text" id="destHeight" onblur="checkAspect(this)"/></p>
+        <p>Width: <input type="text" id="destWidth" onblur="checkAspect(this)"/></p>
+        <p>Lock Aspect Ratio: <input type="checkbox" id="preserveAspect" checked/></p>
+        <p><button type="button" onclick="render()">Render</button><button type="button" onclick="calculate()">Calculate</button></p>
+        <p><button type="button" onclick="zoomin()">+</button><button type="button" onclick="zoomout()">-</button></p>
+        <p><canvas id="clrImg"></canvas></p>
+        <button type="submit">Generate Instructions</button>
+        <input type="hidden" id="image_data" name="image_data"/>
+    </form>
+</div>
+<h1>Now do some work, bitch.</h1>
+<aside>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor vestibulum massa id tristique. Integer et ligula sed magna porttitor vehicula vel consectetur erat. Nunc massa neque, blandit ut feugiat ac, suscipit et lectus. Cras neque libero, vulputate quis tincidunt pellentesque, rhoncus et ligula. Nulla vitae dapibus justo. Mauris nec purus vitae nisi dictum suscipit sit amet ut metus. Integer facilisis rhoncus dictum. Donec tempor libero ut urna egestas sed hendrerit enim dapibus. Nulla vulputate nulla quis leo adipiscing dapibus. Aliquam id metus vel dui adipiscing iaculis nec vel leo. Donec mollis, mauris in posuere sodales, est metus tincidunt orci, eu tempor magna diam quis lacus. Suspendisse elit erat, bibendum a laoreet at, rhoncus ut ipsum. Aliquam aliquet lacus et nulla mollis suscipit. Nulla lacinia nibh ac metus bibendum ullamcorper. In convallis, risus vel rhoncus laoreet, urna erat ultricies lacus, at vestibulum dolor lectus vel odio.</p>
+<div>
+    Order:
+    Instructions £3 (paypal)
+    Completed, Framed Mosaic £5000 (paypal)
+    (We're not joking, this is a huge undertaking to make even one...)
+<div>
+</aside>
+<p><a href="examples">See some completed examples...</a></p>

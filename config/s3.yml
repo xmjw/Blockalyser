@@ -1,0 +1,9 @@
+# config/s3.yml
+development:
+  access_key_id: AKIAI3WVEB36UX72URMA
+  secret_access_key: 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
+  bucket: blockalyser.com
+production:
+  access_key_id: AKIAI3WVEB36UX72URMA
+  secret_access_key: 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
+  bucket: blockalyser.com

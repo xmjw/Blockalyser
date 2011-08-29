@@ -1,0 +1,172 @@
+* { 
+margin:0; 
+padding:0 
+}
+
+body
+{
+	font-family: arial;
+	background-color: #b9b9b9;
+	color: #000000;
+}
+
+a
+{
+	color: #FAFAFA;
+}
+
+#srcImg 
+{
+}
+
+body section article img
+{
+    height:400px;
+    width:870px;
+}
+
+body section article canvas
+{
+	background-color: #353535;
+	width: 60%;
+	float: left;
+}
+
+
+body section article div
+{
+	width: 30%;
+	float: left;
+}
+
+body section article div p
+{
+	margin: 5px;
+}
+
+
+body section article h1
+{
+	clear: both;
+}
+
+body section article p
+{
+	clear: both;
+}
+
+body section article p a
+{
+	color: #040404;
+}
+
+body section article aside form
+{
+	 float: left;
+	 width: 60%; 	 
+}
+
+body section article aside form div
+{
+	background: #9a9a9a;
+	background-image: url('/images/greyfadestripe.png');
+	padding: 15px;
+	width: 90%;
+}
+
+body section article aside div
+{
+	float: left;
+	width: 30%;
+}
+
+header
+{
+	/* background-image: url('top_gradient.png'); */
+	background-image: url('/images/top-stripe.png');
+	background-repeat: repeat-x repeat-y;
+	width: 100%;
+	height: 120px;
+	color: #FAFAFA;
+}
+
+header h1
+{
+	font-size: 2em;
+	padding: 10px 10px 10px 10px;
+}
+
+header h2
+{
+	font-size: 1.2em;
+	padding: 10px 10px 10px 10px;
+}
+
+section
+{
+
+	background-image: url('/images/main_gradient.png');
+	background-repeat: repeat-x;
+	width: 100%;
+}
+
+body section article
+{
+	width: 80%;
+	max-width: 1000px;
+	background-color:#FFFFFF;
+	margin: 2em auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 20px;
+}
+
+footer
+{
+	clear: both;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	background-color: #353535;
+	color: #FAFAFA;
+	height: 200px;
+}
+
+body footer div
+{
+	background-color: #353535;
+	background-image: none;
+	float: left;
+	width: 20%;
+	color: #FAFAFA;
+}
+
+body footer div:first-child
+{
+	margin-left: 10%;
+}
+
+body footer div:last-child
+{
+	margin-right: 10%;
+}
+
+body footer div h1
+{
+	font-size: 0.8em;
+	background-color: #353535;
+	color: #FAFAFA;
+	padding: 15px 20px 0px 20px;
+}
+
+body footer div article
+{
+	background-color: #353535;
+	color: #FAFAFA;
+	padding: 5px 25px 15px 25px;
+	font-size: 0.7em;
+}
+
+body footer div article ul
+{
+	list-style: none;
+}

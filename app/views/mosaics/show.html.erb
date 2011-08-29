@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @mosaic.name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @mosaic.user %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @mosaic.height %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @mosaic.width %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @mosaic.state %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @mosaic.source %>
+</p>
+
+
+<%= link_to 'Edit', edit_mosaic_path(@mosaic) %> |
+<%= link_to 'Back', mosaics_path %>
