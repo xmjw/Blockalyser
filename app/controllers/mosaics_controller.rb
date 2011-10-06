@@ -24,6 +24,8 @@ class MosaicsController < ApplicationController
   # GET /mosaics/new
   # GET /mosaics/new.xml
   def new
+    puts params[:image_data]
+
     @mosaic = Mosaic.new
 
     respond_to do |format|

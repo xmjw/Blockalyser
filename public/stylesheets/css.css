@@ -66,6 +66,11 @@ body section article aside form
 	 width: 60%; 	 
 }
 
+.off
+{
+    display: none;
+}
+
 body section article aside form div
 {
 	background: #9a9a9a;
@@ -169,4 +174,10 @@ body footer div article
 body footer div article ul
 {
 	list-style: none;
+}
+
+.instructor
+{
+    width: 100%;
+    background-color: #FFFFFF;
 }

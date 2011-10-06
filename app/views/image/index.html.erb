@@ -1,10 +1,10 @@
 <img src="/images/splash.png" />
 <h1>Create your mosaic:</h1>
 <aside>
-<form action="/image/upload" enctype="multipart/form-data" method="post">
+<form action="/image/create" enctype="multipart/form-data" method="post" name="UploadForm">
     <div>
         <h2>Upload your image:</h2>
-        <input type="file" name="photo" id="photo" size="40"><button type="submit">Upload</button>
+        <input type="file" name="attachment" id="attachment" size="40"><a href="javascript:document.UploadForm.submit()" class="button save">Upload</a>
     </div>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor vestibulum massa id tristique. Integer et ligula sed magna porttitor vehicula vel consectetur erat. Nunc massa neque, blandit ut feugiat ac, suscipit et lectus. Cras neque libero, vulputate quis tincidunt pellentesque, rhoncus et ligula. Nulla vitae dapibus justo. Mauris nec purus vitae nisi dictum suscipit sit amet ut metus. Integer facilisis rhoncus dictum. Donec tempor libero ut urna egestas sed hendrerit enim dapibus. Nulla vulputate nulla quis leo adipiscing dapibus. Aliquam id metus vel dui adipiscing iaculis nec vel leo. Donec mollis, mauris in posuere sodales, est metus tincidunt orci, eu tempor magna diam quis lacus. Suspendisse elit erat, bibendum a laoreet at, rhoncus ut ipsum. Aliquam aliquet lacus et nulla mollis suscipit. Nulla lacinia nibh ac metus bibendum ullamcorper. In convallis, risus vel rhoncus laoreet, urna erat ultricies lacus, at vestibulum dolor lectus vel odio.</p>
 </form>

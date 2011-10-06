@@ -22,13 +22,30 @@ class ImageController < ApplicationController
     end
   end
 
-  def show
-  end
-
   def index
   end
 
+  def show
+      @image = Image.find(params[:id])
+      send_data @image.data, :filename => @image.file_name, :type => @image.content_type
+      puts @image
+  end
+
   def create
+      return if params[:attachment].blank?
+
+      @image = Image.new
+      @image.uploaded_file = params[:attachment]
+
+      if @image.save
+          puts "All good. Saved on create and rendering to :Show"
+          flash[:notice] = "Thank you for your submission..."
+          render :action => :show
+      else
+          puts "Nope. Cocked up, this isn't happening, failing to :index'"
+          flash[:error] = "There was a problem submitting your attachment."
+          render :action => :index
+      end
   end
 
 end

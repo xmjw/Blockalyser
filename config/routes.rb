@@ -3,7 +3,8 @@ Blockalyser::Application.routes.draw do
 
   match 'image' => 'image#index'
   match 'image/show' => 'image#show'
-  match 'image/upload' => 'image#upload'
+  match 'image/create' => 'image#create'
+  match 'mosaic/new' =>'mosaics#new'
 
 
 
